@@ -10,6 +10,8 @@
   		<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans" />
 
   <style>
+  @import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
   .navbar-inverse
   {
 	background:transparent;
@@ -25,7 +27,7 @@
   {
   	background-image: url(1.jpg);
   	background-repeat:no-repeat;
-  	background-attachment: fixed;
+  	/*background-attachment: fixed;*/
   	background-size: cover;
   	height: 800px;
   }
@@ -33,14 +35,26 @@
   {
   	background-image: url(4.jpg);
   	height:800px;
+  	background-size: cover;
   	background-repeat: no-repeat;
+  	background-attachment: fixed;
 
 
   }
+
+  .bg3
+  {
+  	background-image: url(7.png);
+  	background-size: cover;
+  	height:800px;
+  	background-repeat: no-repeat;
+  	/*background-attachment: fixed;*/
+  }
+
   .name
   {
   	font-weight:800;
-  	font-size:21px;
+  	font-size:20px;
   	font-family:"Open Sans";
   	letter-spacing: -1px;
   	color:white !important;
@@ -55,8 +69,9 @@
   color: white !important;
   font-weight:900;
   font-family: "OPen SANS";
-  padding: 3vw 4vw 4vw 4vw ;
-  font-size:18px;
+  padding: 3vw 3vw 3vw 3vw ;
+  font-size:16px;
+
 
 }
 
@@ -75,16 +90,77 @@
 
 }
 
+.navbar-toggle {top:5px}
+	
 
+.navbar-fixed-top.scrolled {
+  background-color: rgba(48,48,48,0.7) !important;
+  -webkit-transition:  600ms ease;
+  color:black !important;
+
+}
+
+
+nav ul li a,
+nav ul li a:after,
+nav ul li a:before {
+  transition: all .3s;
+}
+nav ul li a:hover {
+  color: #fff;
+}
+
+.navbar-brand small {
+  display:block;
+  font-size:13px;
+  letter-spacing: 0px;
+}
+
+
+
+@media (min-width:768px) {
+  
+  .navbar-brand {
+    padding-top:40px;
+  }
+  
+  .nav.navbar-nav a {
+    padding-top:30px;
+    padding-bottom:400px;
+  }
+
+}
 
 </style>
+<script type="text/javascript">
+	$(function () {
+  $(document).scroll(function () {
+    var $nav = $(".navbar-fixed-top");
+    $nav.toggleClass('scrolled', $(this).scrollTop() > 650);
+  });
+});
+
+// Anchor SCroll
+
+$(document).on('click', 'a[href^="#"]', function (event) {
+    event.preventDefault();
+
+    $('html, body').animate({
+        scrollTop: $($.attr(this, 'href')).offset().top
+    }, 590);
+});
+
+
+// Anchor Scroll ended
+
+</script>
 </head>
 <body>
 
 
 <div class="bg">
-	
-<nav class="navbar navbar-inverse">
+<nav class="navbar navbar-inverse navbar-fixed-top nav-transparent nav-colored">
+	<div class="container">
   <div class="container-fluid">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -92,27 +168,31 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
-      <a class="navbar-brand name" href="#">DEVANSH UPADHYAY</a>
+      <a class="navbar-brand name" href="#">DEVANSH UPADHYAY <small>A Student and Tech Enthusiast</small>	</a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
      
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Projects</a></li>
+        <li><a href="#topsc" class="active" id="topsc">Home</a></li>
+        <li><a href="#project">Projects</a></li>
         <li><a href="#">Contact</a></li>
 	      </ul>
     </div>
   </div>
 </nav>
 </div>
+</div>
   
-<div class="bg2">
+<div class="bg2" id="project">
 	
 
   
 </div>
 
+<div class="bg3">
 
+	
+</div>
 
 
 </body>
