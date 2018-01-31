@@ -11,6 +11,7 @@
 
   <style>
   @import url('https://fonts.googleapis.com/css?family=Open+Sans');
+   @import url('https://fonts.googleapis.com/css?family=Lato');
 
   .navbar-inverse
   {
@@ -20,42 +21,45 @@
   }
   body
   {
-  	margin:0;
-  	padding:0;
+  	margin:0px;
+  	padding:0px;
+  	/*margin-top:0px;*/
   }
   .bg
   {
   	background-image: url(1.jpg);
   	background-repeat:no-repeat;
-  	/*background-attachment: fixed;*/
+  	background-attachment: fixed;
   	background-size: cover;
   	height: 800px;
   }
   .bg2
   {
   	background-image: url(4.jpg);
-  	height:800px;
+  	height:930px;
   	background-size: cover;
   	background-repeat: no-repeat;
-  	background-attachment: fixed;
+  	/*background-attachment: fixed;*/
 
 
   }
 
   .bg3
   {
-  	background-image: url(7.png);
+  	background-image: url(3.jpg);
   	background-size: cover;
   	height:800px;
   	background-repeat: no-repeat;
-  	/*background-attachment: fixed;*/
+  	background-attachment: fixed;
+  	z-index:1;
+  
   }
 
   .name
   {
   	font-weight:800;
   	font-size:20px;
-  	font-family:"Open Sans";
+    font-family: 'Lato', sans-serif;
   	letter-spacing: -1px;
   	color:white !important;
   	padding:4vw 4vw;
@@ -68,7 +72,7 @@
   .navbar .navbar-nav li > a{
   color: white !important;
   font-weight:900;
-  font-family: "OPen SANS";
+  font-family: 'Lato', sans-serif;
   padding: 3vw 3vw 3vw 3vw ;
   font-size:16px;
 
@@ -131,6 +135,103 @@ nav ul li a:hover {
 
 }
 
+.logo_sty
+{
+	height:100px;
+	width:100px;
+	border-radius:50%;
+}
+
+#fadeonappear h1
+{
+    opacity: 0;
+    /*margin-top: 25px;*/
+    font-size: 21px;
+    text-align: center;
+    
+}
+
+.main_inf
+{
+	 
+	color:#fff;
+    font-family: 'Lato', sans-serif;
+    font-size: 19px;
+    letter-spacing: 2px;
+
+
+}
+
+#visitor
+{
+	font-family: 'Open Sans';
+	color:#ff0047;
+	font-size: 40px;
+	animation-delay: 2s;
+	animation-name: fadeInOut;
+    /*text-shadow: 0 0 3px rgba(0,0,0,1);*/
+
+
+
+}
+
+.projectscontainer
+{
+	margin-top:30px;
+	font-family: 'Open Sans',sans-serif;
+	color: #fff;
+	border: 2px solid black;
+	font-weight:700;
+	padding: 10px 10px 10px 10px;
+	background: rgba(0,0,0, 0.7);
+	border-radius:25px;
+	font-size:20px;
+	letter-spacing: 2.6px;
+	}
+.projectscontainer p
+{
+	font-family:'Lato',sans-serif;
+	padding:-10px;
+	font-size:15px;
+	letter-spacing: 2px;
+}
+
+.dldbt
+{
+	background: rgba(2,2,2,0.8);
+	color:white;
+	border-radius:5px;
+	text-decoration:none;
+
+}
+
+.projectscontainer2
+
+{
+	margin-top:30px;
+	font-family:'Lato',sans-serif;
+	color:#fff;
+	border: 2px solid white;
+	font-weight:500;
+	padding:10px 10px 10px 10px;
+	background: rgba(0,0,0,0.7);
+	border-radius:25px;
+	font-size:20px;
+	padding-right:5px;
+	letter-spacing: 1px;
+	
+}
+
+.projectscontainer2 p
+{	
+	font-family:'Lato',sans-serif;
+	/*padding:-10px;*/
+	font-size:15px;
+	letter-spacing: 2px;
+
+}
+
+
 </style>
 <script type="text/javascript">
 	$(function () {
@@ -151,14 +252,18 @@ $(document).on('click', 'a[href^="#"]', function (event) {
 });
 
 
-// Anchor Scroll ended
+// Anchor Scroll end
+
+// Fade Appear Animation
+
+$("#visitor").delay(600).animate({"opacity": "1"}, 700);
 
 </script>
 </head>
 <body>
 
 
-<div class="bg">
+<div class="bg" id="first">
 <nav class="navbar navbar-inverse navbar-fixed-top nav-transparent nav-colored">
 	<div class="container">
   <div class="container-fluid">
@@ -168,28 +273,91 @@ $(document).on('click', 'a[href^="#"]', function (event) {
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
-      <a class="navbar-brand name" href="#">DEVANSH UPADHYAY <small>A Student and Tech Enthusiast</small>	</a>
+     <a href="#" class="pull-left"><img src="mine.jpg" class="logo_sty"></a><a class="navbar-brand name" href="#">DEVANSH UPADHYAY <small>A Student and Tech Enthusiast</small>	</a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
      
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#topsc" class="active" id="topsc">Home</a></li>
+        <li><a href="#first" class="active">Home</a></li>
         <li><a href="#project">Projects</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="#contact">Contact</a></li>
 	      </ul>
     </div>
   </div>
+</div>
 </nav>
+<br><br><br><br><br><br><br><br><br><br><br><br>
+<div class="container main_inf">
+	<p><span id="visitor">  &nbsp &nbsp Hey There !! </span><br>
+		<br>I'm Devansh Upadhyay, a student and soon to be a Computer Engineer from Shri Vaishnav Institute of Technology and Science , Indore.I love to code and solving puzzles and logical brain teasing activities are among my hobbies.I like playing cricket , watching movies and cartoon shows in free time.</p>
+	
+
 </div>
 </div>
+
+
   
 <div class="bg2" id="project">
+
+
+	
+
+	<div class="container">
+
+		<div class="projectscontainer">
+		<h2>     &nbsp &nbsp  Java Message Passing System</h2>
+		<p> &nbsp A simple java Socket programming application for simulating a client-server architecture.</p>
+		<a href="" class="dldbt"><center>View Code</center></a>
+		
+	</div>
+
+		<div class="projectscontainer">
+		<h2>     &nbsp &nbsp  TextEdit</h2>
+		<p>A simple text editor for daily usage. You can open files , save them , add new files , modify existing files and many more utilities within the Editor. And the best part?? You can view the code and modify it. </p>
+		<a href="" class="dldbt"><center>View Code</center></a>
+		
+	</div>
+
+		<div class="projectscontainer">
+		<h2>     &nbsp &nbsp  Instaview</h2>
+		<p> &nbsp Want to view someone's profile image from Instagram ??  This is a python3 Web Scraping program to fetch the Profile Image of the user in full resolution.</p>
+		<a href="" class="dldbt"><center>View Code</center></a>
+		
+	</div>
+
+		<div class="projectscontainer">
+		<h2>     &nbsp &nbsp  Portfolio</h2>
+		<p> &nbsp This is one of my Projects that I did as a hands on practice of HTML and CSS. Liked this portfolio ?? <br>&nbsp You can use it as a template too , just leave a Star on this Github repo.</p>
+		<a href="" class="dldbt"><center>View Code</center></a>
+		
+	</div>
+</div>
+
 	
 
   
 </div>
 
-<div class="bg3">
+<div class="bg3" id="contact" >
+
+
+	<div class="container cont3" >
+		
+		<div class="projectscontainer2" style="margin-top:200px;">
+			<h2>     &nbsp &nbsp  A Self-Build Blog</h2>
+			<p> &nbsp People do have a hobby for writing a blog. But won't it be good if it was totally developed by you from scratch !!
+		Stay Tuned .. It'll be soon deployed soon!!!  </p>
+	
+
+
+		
+	</div>
+
+	
+			
+</div>
+<div class="container projectscontainer2" >
+			<h2> <center>  And Many More to Come ,It's just the beginning</center></h2>
 
 	
 </div>
