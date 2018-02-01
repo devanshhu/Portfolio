@@ -36,7 +36,7 @@
   .bg2
   {
   	background-image: url(4.jpg);
-  	height:930px;
+  	height:940px;
   	background-size: cover;
   	background-repeat: no-repeat;
   	/*background-attachment: fixed;*/
@@ -46,9 +46,10 @@
 
   .bg3
   {
-  	background-image: url(3.jpg);
+  	background-image: url(7.jpg);
   	background-size: cover;
   	height:800px;
+    height:100%;
   	background-repeat: no-repeat;
   	background-attachment: fixed;
   	z-index:1;
@@ -98,7 +99,7 @@
 	
 
 .navbar-fixed-top.scrolled {
-  background-color: rgba(48,48,48,0.7) !important;
+  background-color: rgba(60,60,60,0.74) !important;
   -webkit-transition:  600ms ease;
   color:black !important;
 
@@ -203,6 +204,7 @@ nav ul li a:hover {
 	border-radius:5px;
 	text-decoration:none;
 
+
 }
 
 .projectscontainer2
@@ -219,6 +221,7 @@ nav ul li a:hover {
 	font-size:20px;
 	padding-right:5px;
 	letter-spacing: 1px;
+  /*margin-top:200px;*/
 	
 }
 
@@ -230,6 +233,50 @@ nav ul li a:hover {
 	letter-spacing: 2px;
 
 }
+
+
+
+.socicons ul
+{
+  list-style:none;
+  padding:50px;
+  margin-top:50px;
+  display:inline-block;
+  
+  
+  
+}
+
+
+.iccontainer
+{
+  border-radius:50%;
+  background-color:rgba(0,0,0,0.7);
+  border: 2px solid white;
+  float:left;
+  height:100px;
+  width:100px;
+  text-align:center;
+  margin-right:100px;
+
+
+}
+
+.sociconsmain
+{
+  height:100px;
+  width:100px;
+  vertical-align: middle;
+  padding:5px;
+  padding-top:10px;
+  text-align:center;
+  width:90%;
+  height:90%;
+
+  /*padding:10px;*/
+}
+
+
 
 
 </style>
@@ -288,8 +335,8 @@ $("#visitor").delay(600).animate({"opacity": "1"}, 700);
 </nav>
 <br><br><br><br><br><br><br><br><br><br><br><br>
 <div class="container main_inf">
-	<p><span id="visitor">  &nbsp &nbsp Hey There !! </span><br>
-		<br>I'm Devansh Upadhyay, a student and soon to be a Computer Engineer from Shri Vaishnav Institute of Technology and Science , Indore.I love to code and solving puzzles and logical brain teasing activities are among my hobbies.I like playing cricket , watching movies and cartoon shows in free time.</p>
+	<p><span id="visitor">  &nbsp Hey There !! </span><br>
+		<br>I'm Devansh Upadhyay, a 19-year old student and soon to be a Computer Engineer from Shri Vaishnav Institute of Technology and Science , Indore . I love to code and solving puzzles and logical brain teasing activities are among my hobbies.I like playing cricket , watching movies and cartoon shows in free time.</p>
 	
 
 </div>
@@ -313,7 +360,7 @@ $("#visitor").delay(600).animate({"opacity": "1"}, 700);
 
 		<div class="projectscontainer">
 		<h2>     &nbsp &nbsp  TextEdit</h2>
-		<p>A simple text editor for daily usage. You can open files , save them , add new files , modify existing files and many more utilities within the Editor. And the best part?? You can view the code and modify it. </p>
+		<p>A simple text editor for daily usage. You can open files , save them , add new files , modify existing files and many more utilities within the Editor. And the best part?? You can view the code and modify it for your use..</p>
 		<a href="" class="dldbt"><center>View Code</center></a>
 		
 	</div>
@@ -343,10 +390,10 @@ $("#visitor").delay(600).animate({"opacity": "1"}, 700);
 
 	<div class="container cont3" >
 		
-		<div class="projectscontainer2" style="margin-top:200px;">
+		<div class="projectscontainer2" style="margin-top:200px; ">
 			<h2>     &nbsp &nbsp  A Self-Build Blog</h2>
 			<p> &nbsp People do have a hobby for writing a blog. But won't it be good if it was totally developed by you from scratch !!
-		Stay Tuned .. It'll be soon deployed soon!!!  </p>
+		Stay Tuned .. It'll be soon deployed soon!!! Will also be available for You to use as your own blog.. </p>
 	
 
 
@@ -357,11 +404,29 @@ $("#visitor").delay(600).animate({"opacity": "1"}, 700);
 			
 </div>
 <div class="container projectscontainer2" >
-			<h2> <center>  And Many More to Come ,It's just the beginning</center></h2>
+			<h2> <center>  And Many More to Come , It's just the beginning</center></h2>
 
-	
+
 </div>
 
+<div class="container socicons" style="margin-bottom:50px;">
+
+
+
+<ul>
+  <li class="iccontainer"><a href="git"><img src="git1.svg" class="sociconsmain"></img></a></li>
+  <li class="iccontainer"><a href="linkedin"><img src="ln.svg" class="sociconsmain"></img></a></li>
+  <li class="iccontainer"><a href="git"><img src="fb.svg" class="sociconsmain"></img></a></li>
+  <li class="iccontainer"><a href="git"><img src="instagram.svg" class="sociconsmain"></img></a></li>
+  <li class="iccontainer"><a href="git"><img src="gmailwh.svg" class="sociconsmain"></img></a></li>
+
+
+
+</ul>
+  
+</div>
+
+</div>
 
 </body>
 </html>
