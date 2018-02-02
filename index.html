@@ -29,17 +29,18 @@
   {
   	background-image: url(1.jpg);
   	background-repeat:no-repeat;
-  	background-attachment: fixed;
+  	/*background-attachment: fixed;*/
   	background-size: cover;
   	height: 800px;
   }
   .bg2
   {
   	background-image: url(2.jpg);
-  	height:940px;
+    height:940px;
+    height:100%;
   	background-size: cover;
   	background-repeat: no-repeat;
-  	/*background-attachment: fixed;*/
+  	background-attachment: fixed;
 
 
   }
@@ -51,6 +52,7 @@
   	height:800px;
     height:100%;
   	background-repeat: no-repeat;
+
   	background-attachment: fixed;
   	z-index:1;
   
@@ -188,6 +190,7 @@ nav ul li a:hover {
 	border-radius:25px;
 	font-size:20px;
 	letter-spacing: 2.6px;
+  margin-bottom: 50px;
 	}
 .projectscontainer p
 {
@@ -240,7 +243,7 @@ nav ul li a:hover {
 {
   list-style:none;
   padding:50px;
-  margin-top:50px;
+  /*margin-top:50px;*/
   display:inline-block;
   
   
@@ -257,7 +260,8 @@ nav ul li a:hover {
   height:100px;
   width:100px;
   text-align:center;
-  margin-right:100px;
+  /*margin-right:100px;*/
+  margin-right:7vw;
 
 
 }
@@ -274,6 +278,18 @@ nav ul li a:hover {
   height:90%;
 
   /*padding:10px;*/
+}
+
+.Phead
+{
+    font-family: 'Lato',sans-serif;
+    font-size:30px;
+    color: #ff0047;
+    margin-top:100px;
+    text-align:center;
+    text-shadow: 2px solid black;
+    font-weight:800;
+    letter-spacing:4px;
 }
 
 
@@ -350,6 +366,7 @@ $("#visitor").delay(600).animate({"opacity": "1"}, 700);
 	
 
 	<div class="container">
+    <div class="Phead">Projects</div>
 
 		<div class="projectscontainer">
 		<h2>     &nbsp &nbsp  Java Message Passing System</h2>
@@ -410,15 +427,15 @@ $("#visitor").delay(600).animate({"opacity": "1"}, 700);
 </div>
 
 <div class="container socicons" style="margin-bottom:50px;">
-
+  <div class="Phead " Style=" color:#ff0047; margin-bottom:0px;">CONTACT ME</div>
 
 
 <ul>
   <li class="iccontainer"><a href="https://www.github.com/devanshhu"><img src="github.svg" class="sociconsmain"></img></a></li>
-  <li class="iccontainer"><a href="linkedin"><img src="ln.svg" class="sociconsmain"></img></a></li>
+  <li class="iccontainer"><a href="https://www.linkedin.com/in/devansh-upadhyay"><img src="ln.svg" class="sociconsmain"></img></a></li>
   <li class="iccontainer"><a href="https://www.facebook.com/devansh.upadhyay.35"><img src="fb.svg" class="sociconsmain"></img></a></li>
   <li class="iccontainer"><a href="https://www.instagram.com/devanshhu"><img src="instagram.svg" class="sociconsmain"></img></a></li>
-  <li class="iccontainer"><a href="git"><img src="mail.svg" class="sociconsmain"></img></a></li>
+  <li class="iccontainer"><a href="mailto:devanshu9719@gmail.com?Subject=Hello%20Devansh"><img src="mail.svg" class="sociconsmain"></img></a></li>
 
 
 
