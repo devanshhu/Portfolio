@@ -4,7 +4,7 @@ var i = 0;
 
 window.onload = function () {
     document.getElementById('nav').style.maxHeight = "13%";
-    if( $(window).width() < 700 )
+    if( $(window).width() < 800 )
     {
         renderMobile();
     }
