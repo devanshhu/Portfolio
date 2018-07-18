@@ -1,449 +1,278 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
   <title>Devansh Upadhyay</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  		<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans" />
 
-  <style>
-  @import url('https://fonts.googleapis.com/css?family=Open+Sans');
-   @import url('https://fonts.googleapis.com/css?family=Lato');
-
-  .navbar-inverse
-  {
-	background:transparent;
-	background-border:transparent; 
-	border:0; 	
-  }
-  body
-  {
-  	margin:0px;
-  	padding:0px;
-  	/*margin-top:0px;*/
-  }
-  .bg
-  {
-  	background-image: url(1.jpg);
-  	background-repeat:no-repeat;
-  	/*background-attachment: fixed;*/
-  	background-size: cover;
-  	height: 800px;
-  }
-  .bg2
-  {
-  	background-image: url(2.jpg);
-    height:940px;
-    height:100%;
-  	background-size: cover;
-  	background-repeat: no-repeat;
-  	background-attachment: fixed;
-
-
-  }
-
-  .bg3
-  {
-  	background-image: url(3.jpg);
-  	background-size: cover;
-  	height:800px;
-    height:100%;
-  	background-repeat: no-repeat;
-
-  	background-attachment: fixed;
-  	z-index:1;
-  
-  }
-
-  .name
-  {
-  	font-weight:800;
-  	font-size:20px;
-    font-family: 'Lato', sans-serif;
-  	letter-spacing: -1px;
-  	color:white !important;
-  	padding:4vw 4vw;
-
-  }
-  .navbar-inverse .navbar-brand 
-  {
-  	font-color:white;
-  }
-  .navbar .navbar-nav li > a{
-  color: white !important;
-  font-weight:900;
-  font-family: 'Lato', sans-serif;
-  padding: 3vw 3vw 3vw 3vw ;
-  font-size:16px;
-
-
-}
-
-.navbar .navbar-nav li>a:hover
-{
-	font-color:#ff0047;
-	color:#ff0047 !important;
-	border-bottom: 4px solid #ff0047;
-
-}
-
-.navbar .navbar-nav li>a:active
-{
-		border-bottom: 4px solid #ff0047;
-
-
-}
-
-.navbar-toggle {top:5px}
-	
-
-.navbar-fixed-top.scrolled {
-  background-color: rgba(60,60,60,0.74) !important;
-  -webkit-transition:  600ms ease;
-  color:black !important;
-
-}
-
-
-nav ul li a,
-nav ul li a:after,
-nav ul li a:before {
-  transition: all .3s;
-}
-nav ul li a:hover {
-  color: #fff;
-}
-
-.navbar-brand small {
-  display:block;
-  font-size:13px;
-  letter-spacing: 0px;
-}
-
-
-
-@media (min-width:768px) {
-  
-  .navbar-brand {
-    padding-top:40px;
-  }
-  
-  .nav.navbar-nav a {
-    padding-top:30px;
-    padding-bottom:400px;
-  }
-
-}
-
-.logo_sty
-{
-	height:100px;
-	width:100px;
-	border-radius:50%;
-}
-
-#fadeonappear h1
-{
-    opacity: 0;
-    /*margin-top: 25px;*/
-    font-size: 21px;
-    text-align: center;
+  <meta name="author" content="Portfolio Website"> 
+  <meta  content="Comporessed Images for quick loading" >
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
+    crossorigin="anonymous">
     
-}
-
-.main_inf
-{
-	 
-	color:#fff;
-    font-family: 'Lato', sans-serif;
-    font-size: 19px;
-    letter-spacing: 2px;
-
-
-}
-
-#visitor
-{
-	font-family: 'Open Sans';
-	color:#ff0047;
-	font-size: 40px;
-	animation-delay: 2s;
-	animation-name: fadeInOut;
-    /*text-shadow: 0 0 3px rgba(0,0,0,1);*/
-
-
-
-}
-
-.projectscontainer
-{
-	margin-top:30px;
-	font-family: 'Open Sans',sans-serif;
-	color: #fff;
-	border: 2px solid black;
-	font-weight:700;
-	padding: 10px 10px 10px 10px;
-	background: rgba(0,0,0, 0.7);
-	border-radius:25px;
-	font-size:20px;
-	letter-spacing: 2.6px;
-  margin-bottom: 50px;
-	}
-.projectscontainer p
-{
-	font-family:'Lato',sans-serif;
-	padding:-10px;
-	font-size:15px;
-	letter-spacing: 2px;
-}
-
-.dldbt
-{
-	background: rgba(2,2,2,0.8);
-	color:white;
-	border-radius:5px;
-	text-decoration:none;
-
-
-}
-
-.projectscontainer2
-
-{
-	margin-top:30px;
-	font-family:'Lato',sans-serif;
-	color:#fff;
-	border: 2px solid white;
-	font-weight:500;
-	padding:10px 10px 10px 10px;
-	background: rgba(0,0,0,0.7);
-	border-radius:25px;
-	font-size:20px;
-	padding-right:5px;
-	letter-spacing: 1px;
-  /*margin-top:200px;*/
-	
-}
-
-.projectscontainer2 p
-{	
-	font-family:'Lato',sans-serif;
-	/*padding:-10px;*/
-	font-size:15px;
-	letter-spacing: 2px;
-
-}
-
-
-
-.socicons ul
-{
-  list-style:none;
-  padding:50px;
-  /*margin-top:50px;*/
-  display:inline-block;
-  
-  
-  
-}
-
-
-.iccontainer
-{
-  border-radius:50%;
-  background-color:rgba(0,0,0,0.7);
-  border: 2px solid white;
-  float:left;
-  height:100px;
-  width:100px;
-  text-align:center;
-  /*margin-right:100px;*/
-  margin-right:7vw;
-
-
-}
-
-.sociconsmain
-{
-  height:100px;
-  width:100px;
-  vertical-align: middle;
-  padding:5px;
-  padding-top:10px;
-  text-align:center;
-  width:90%;
-  height:90%;
-
-  /*padding:10px;*/
-}
-
-.Phead
-{
-    font-family: 'Lato',sans-serif;
-    font-size:30px;
-    color: #ff0047;
-    margin-top:100px;
-    text-align:center;
-    text-shadow: 2px solid black;
-    font-weight:800;
-    letter-spacing:4px;
-}
-
-
-
-
-</style>
-<script type="text/javascript">
-	$(function () {
-  $(document).scroll(function () {
-    var $nav = $(".navbar-fixed-top");
-    $nav.toggleClass('scrolled', $(this).scrollTop() > 650);
-  });
-});
-
-// Anchor SCroll
-
-$(document).on('click', 'a[href^="#"]', function (event) {
-    event.preventDefault();
-
-    $('html, body').animate({
-        scrollTop: $($.attr(this, 'href')).offset().top
-    }, 590);
-});
-
-
-// Anchor Scroll end
-
-// Fade Appear Animation
-
-$("#visitor").delay(600).animate({"opacity": "1"}, 700);
-
-</script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+    <link rel="shortcut icon" type="image/png" href="./favicon.png"/>
+  <link rel="stylesheet" href="./style.css">
+  <script type="text/javascript" src="./acc.js"></script>
 </head>
 <body>
+  <div style="display:flex; width : 100%; background-color:black;">
+    <div class="navbar-wrapper" id="nav">
+      <div class="navbar-main">
+        <div class="element" id="brief-info">
+          <div class="image" id="head-image">
+            <img src="./header.jpg" alt="Image">
+          </div>
+          <div class="head-text">
+            <span class="brand-name">
+              DEVANSH &nbsp; UPADHYAY
+            </span>
 
-
-<div class="bg" id="first">
-<nav class="navbar navbar-inverse navbar-fixed-top nav-transparent nav-colored">
-	<div class="container">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                        
-      </button>
-     <a href="#" class="pull-left"><img src="header.jpg" class="logo_sty"></a><a class="navbar-brand name" href="#">DEVANSH UPADHYAY <small>A Student and Tech Enthusiast</small>	</a>
-    </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-     
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#first" class="active">Home</a></li>
-        <li><a href="#project">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-	      </ul>
+            <span class="extras">
+              Student & Tech Enthusiast
+            </span>
+          </div>
+        </div>
+        <div class="element menu">
+          <span class="child " id='home' onclick="scrollToElement(document.getElementById('home-container'))">
+            HOME
+          </span>
+          <span class="child" id="project" onclick="scrollToElement(document.getElementById('project-container'))">
+           <a href="#project-container">PROJECTS</a> 
+          </span>
+          <span class="child" id="contact" onclick="scrollToElement(document.getElementById('contact-container'))">
+            <a href="#contact-container"> CONTACT </a>
+          </span>
+        </div>
+      </div>
     </div>
   </div>
-</div>
-</nav>
-<br><br><br><br><br><br><br><br><br><br><br><br>
-<div class="container main_inf">
-	<p><span id="visitor">  &nbsp Hey There !! </span><br>
-		<br>I'm Devansh Upadhyay, a 19-year old student and soon to be a Computer Engineer from Shri Vaishnav Institute of Technology and Science , Indore . I love to code and solving puzzles and logical brain teasing activities are among my hobbies.I like playing cricket , watching movies and cartoon shows in free time.</p>
-	
+  <div class="main-container" id='home-container'>
+    <div class="content">
+      <span class="salutation" id="salutation-text">
+        &nbsp; Hey There !!
+      </span>
+      <div class="brief">
+        <span class="text" id="main-inf">
+          I'm Devansh Upadhyay, a 19-year old student and soon to be a Computer Engineer from Shri Vaishnav Institute of Technology
+          and Science , Indore.
+        </span>
+      </div>
+    </div>
+    <div class="salutation skill-set" id="skills">
+      &nbsp; SkillSet
+    </div>
+    <div class="skill-wrapper" id="skill-wrap">
 
-</div>
-</div>
+      <div class="row">
+        <div class="skill">
+          <i class="fab fa-java fa-3x"></i> &nbsp; Java
+          <div class="scale">
+            <div class="rate" id="java"></div>
+          </div>
+        </div>
+        <div class="skill">
+          <i class="fab fa-python fa-2x"></i> &nbsp; Python3
+          <div class="scale">
+            <div class="rate" id="python"></div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="skill">
+          <i class="fab fa-angular fa-2x"></i> &nbsp; Angular2
+          <div class="scale">
+            <div class="rate" id="ng"></div>
+          </div>
+        </div>
+        <div class="skill">
+          .NET (Core)
+          <div class="scale">
+            <div class="rate" id="dotnet"></div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="skill">
+          <i class="fab fa-html5 fa-lg"></i> &nbsp; HTML5
+          <div class="scale">
+            <div class="rate" id="html"></div>
+          </div>
+        </div>
+        <div class="skill">
+          <i class="fab fa-css3 fa-lg"></i> &nbsp; CSS3
+          <div class="scale">
+            <div class="rate" id="css"></div>
+          </div>
+        </div>
+
+      </div>
+      <div class="row">
+        <div class="skill">
+          <img src="./sql.svg"></img> &nbsp; SQL Server
+          <div class="scale">
+            <div class="rate" id="sql-server"></div>
+          </div>
+        </div>
+        <div class="skill">
+          <img src="./django.svg" style="width:2rem ; height:2rem ;" ></img> &nbsp; Django
+          <div class="scale">
+            <div class="rate" id="django"></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="main-container" id="project-container">
+    <div class="salutation" id="sal-project">
+      <center> Projects </center>
+    </div>
+    <div class="projects">
+
+      <div class="card" onmouseenter="showLink(this)" onmousemove="showLink(this)" onmouseout="hideLink(this)">
+        <div class="project">
+          <div class="heading">
+            Maps @thepolitics.in
+          </div>
+          <div class="image">
+            <img src="./maps.jpg" alt="Maps">
+          </div>
+          <div class="description">
+            One of the Projects I had during my Internship &nbsp; @ thepolitics.in .&nbsp; Used the D3.JS library for rendering maps and
+            Angular2 . Learned a lot. Special Thanx to my Mentor..
+          </div>
+          <div class="ln-wrapper">
+            <div class="code-link" onclick="routeToPolitics('maps')">
+              <i class="fas fa-reply fa-lg"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card" onmouseenter="showLink(this)" onmousemove="showLink(this)" onmouseout="hideLink(this)">
+        <div class="project">
+          <div class="heading">
+            SMIIP @thepolitics.in
+          </div>
+          <div class="image">
+            <img src="./smiip.jpg" alt="Maps">
+          </div>
+          <div class="description">
+            Social Media Intelligence Index for Politicians Another Project by @thepolitics.in to which I contributed . Developed the
+            Scrapper . Special Thanx to my Mentor for helping..
+          </div>
+          <div class="ln-wrapper">
+            <div class="code-link" onclick="routeToPolitics('social-media')">
+              <i class="fas fa-reply fa-lg"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card" onmouseenter="showLink(this)" onmousemove="showLink(this)" onmouseout="hideLink(this)">
+        <div class="project">
+          <div class="heading">
+            Portfolio
+          </div>
+          <div class="image">
+            <img src="./portfolio.png" alt="Portfolio">
+          </div>
+          <div class="description">
+            This is one of my Projects that I did as a hands on practice of HTML, CSS and Javascript. Liked this portfolio ?? You can use it as a
+            template too , just leave a Star on the Github repo.
+          </div>
+          <div class="ln-wrapper">
+            <div class="code-link" onclick="routeToRepo('Portfolio')">
+              <i class="fas fa-reply fa-lg"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" onmouseenter="showLink(this)" onmousemove="showLink(this)" onmouseout="hideLink(this)">
+        <div class="project">
+          <div class="heading">
+            TextEdit
+          </div>
+          <div class="image">
+            <img src="./editor.png" alt="Text Editor">
+          </div>
+          <div class="description">
+            A utility text editor. You can open files , add new files , modify existing files and many more utilities within the Editor.
+            And the best part?? You can view the code and modify it for your use..
+          </div>
+          <div class="ln-wrapper">
+            <div class="code-link" onclick="routeToRepo('TextEdit')">
+              <i class="fas fa-reply fa-lg"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card" onmouseenter="showLink(this)" onmousemove="showLink(this)" onmouseout="hideLink(this)">
+        <div class="project">
+          <div class="heading">
+            InstaView
+          </div>
+          <div class="image">
+            <img src="./InstaView.jpg" alt="InstaView">
+          </div>
+          <div class="description">
+            Want to view someone's profile image from Instagram ?? This is a Console Application written in .NET Core to fetch the Profile
+            Image of the user in full resolution.
+          </div>
+          <div class="ln-wrapper">
+            <div class="code-link" onclick="routeToRepo('InstaViewCS')">
+              <i class="fas fa-reply fa-lg"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card" onmouseenter="showLink(this)" onmousemove="showLink(this)" onmouseout="hideLink(this)">
+        <div class="project">
+          <div class="heading">
+            The Minor Project &nbsp;
+            <strong>EQ</strong>
+          </div>
+          <div class="image">
+            <img src="./minor.jpg" alt="Maps">
+          </div>
+          <div class="description">
+            The digital Queue Management System that I developed as the Minor Project with my teammates. Used the Django Framework and
+            Sql Database .
+          </div>
+          <div class="ln-wrapper">
+            <div class="code-link" onclick="routeToRepo('eq')">
+              <i class="fas fa-reply fa-lg"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="extra" id="many-more">
+      <h4>And Many More....</h4>
+    </div>
+  </div>
 
 
-  
-<div class="bg2" id="project">
-
-
-	
-
-	<div class="container">
-    <div class="Phead">Projects</div>
-
-		<div class="projectscontainer">
-		<h2>     &nbsp &nbsp  Java Message Passing System</h2>
-		<p> &nbsp A simple java Socket programming application for simulating a client-server architecture.</p>
-		<a href="" class="dldbt"><center>View Code</center></a>
-		
-	</div>
-
-		<div class="projectscontainer">
-		<h2>     &nbsp &nbsp  TextEdit</h2>
-		<p>A simple text editor for daily usage. You can open files , save them , add new files , modify existing files and many more utilities within the Editor. And the best part?? You can view the code and modify it for your use..</p>
-		<a href="https://github.com/devanshhu/Textedit" class="dldbt"><center>View Code</center></a>
-		
-	</div>
-
-		<div class="projectscontainer">
-		<h2>     &nbsp &nbsp  Instaview</h2>
-		<p> &nbsp Want to view someone's profile image from Instagram ??  This is a python3 Web Scraping program to fetch the Profile Image of the user in full resolution.</p>
-		<a href="https://github.com/devanshhu/InstaView" class="dldbt"><center>View Code</center></a>
-		
-	</div>
-
-		<div class="projectscontainer">
-		<h2>     &nbsp &nbsp  Portfolio</h2>
-		<p> &nbsp This is one of my Projects that I did as a hands on practice of HTML and CSS. Liked this portfolio ?? <br>&nbsp You can use it as a template too , just leave a Star on this Github repo.</p>
-		<a href="https://github.com/devanshhu/Portfolio" class="dldbt"><center>View Code</center></a>
-		
-	</div>
-</div>
-
-	
-
-  
-</div>
-
-<div class="bg3" id="contact" >
-
-
-	<div class="container cont3" >
-		
-		<div class="projectscontainer2" style="margin-top:200px; ">
-			<h2>     &nbsp &nbsp  A Self-Build Blog</h2>
-			<p> &nbsp People do have a hobby for writing a blog. But won't it be good if it was totally developed by you from scratch !!
-		Stay Tuned .. It'll be deployed soon!!! </p>
-	
-
-
-		
-	</div>
-
-	
-			
-</div>
-<div class="container projectscontainer2" >
-			<h2> <center>  And Many More to Come , It's just the beginning</center></h2>
-
-
-</div>
-
-<div class="container socicons" style="margin-bottom:50px;">
-  <div class="Phead " Style=" color:#ff0047; margin-bottom:0px;">CONTACT ME</div>
-
-
-<ul>
-  <li class="iccontainer"><a href="https://www.github.com/devanshhu"><img src="github.svg" class="sociconsmain"></img></a></li>
-  <li class="iccontainer"><a href="https://www.linkedin.com/in/devansh-upadhyay"><img src="ln.svg" class="sociconsmain"></img></a></li>
-  <li class="iccontainer"><a href="https://www.facebook.com/devansh.upadhyay.35"><img src="fb.svg" class="sociconsmain"></img></a></li>
-  <li class="iccontainer"><a href="https://www.instagram.com/devanshhu"><img src="instagram.svg" class="sociconsmain"></img></a></li>
-  <li class="iccontainer"><a href="mailto:devanshu9719@gmail.com?Subject=Hello%20Devansh"><img src="mail.svg" class="sociconsmain"></img></a></li>
-
-
-
-</ul>
-  
-</div>
-
-</div>
-
+  <div class="contact-containerl" id="contact-container">
+      <div class="salutation" id="sal-contact">
+        <center> Contact Me  </center>
+      </div>
+      <div class="accounts">
+        <div class="account" onclick="routeToFacebook()">
+          <i class="fab fa-facebook-f fa-2x"></i>
+        </div>
+        <div class="account" onclick="routeToInstagram()">
+          <i class="fab fa-instagram fa-2x"></i>
+        </div>
+        <div class="account" onclick="routeToLinkedIn()">
+          <i class="fab fa-linkedin-in fa-2x"></i>
+        </div>
+        <div class="account" onclick="routeToGithub()">
+          <i class="fab fa-github fa-2x"></i>
+        </div>
+        <div class="account" onclick="openMail()">
+          <i class="fas fa-envelope fa-2x"></i>
+        </div>
+      </div>
+    </div>
 </body>
 </html>
