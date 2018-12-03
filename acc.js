@@ -33,7 +33,7 @@ function renderMobile()
     document.getElementById('home').style.display = "none";
     document.getElementById('project').style.display = "none";
     document.getElementById('contact').style.display = "none";
-    document.getElementsByClassName('extras')[0].style.display="none";
+    // document.getElementsByClassName('extras')[0].style.display="none";
     document.getElementById('brief-info').style.width = "80%";
     document.getElementsByClassName('head-text')[0].style.width="700px";
     document.getElementsByClassName('extras')[0].style.display="600px";
