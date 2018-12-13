@@ -666,7 +666,7 @@ a
 #sal-contact
 {
     display:none;
-    animation: slideFromRight 3s 1;    
+    animation: slideFromLeft 3s 1;    
 }
 .contact-containerl > .salutation
 {
